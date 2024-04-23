@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(vetor\ preto.jpg); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a página */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    height: 100vh; 
+
+}
+
+#Titulo-pricipal {
+   color:rgb(255, 255, 255);
+   font-size: 20px;
+   font-family: sans-serif;
+   position: fixed;
+}
+
+.menu-title {
+cursor: pointer;
+font-size: 28px;
+color: rgb(255, 255, 255);
+transition: transform 0.3s ease-in-out;
+
+}
+
+.menu-title:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+display: none;
+}
+
+.Menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    padding-top: 20px;
+    z-index: 999; /* Para garantir que o menu esteja acima do vídeo */
+}
+
+
+.red-text {
+    color: rgb(255, 0, 0);
+}
+.white-text {
+    color: white;
+    
+}
+.cian-text {
+    color: rgb(255, 255, 255);
+}
+
+a {
+    color: white;
+    text-decoration: none; /* Remover o sublinhado padrão */
+    top: 10px; /* Definindo a distância do topo */
+    right: 10px; /* Definindo a distância da direita */
+}
+
+/* Estilizando o link quando o mouse passa por cima */
+.a:hover {
+    text-decoration: underline; /* Adicionar sublinhado quando passa o mouse */
+}
+iframe {
+    /* Definindo o posicionamento absoluto */
+    top: 100; /* Alinhando ao topo */
+    right: 0; /* Alinhando à direita */
+    width: 35%; /* Definindo a largura */
+    height: 35%; /* Definindo a altura */
+    z-index: 0; /* Garante que o iframe esteja atrás do link */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#ar-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.PLACA-SNMP {
+    color: white;
+    position: absolute;
+    top: calc(70% + 10px); /* Posicionando o título 10 pixels abaixo do iframe */
+    right: 79%;
+    height: 45%;
+    font-size: medium;
+    margin: 0;
+}
+.TITULO {
+    color: white;
+    position: absolute;
+    top: calc(70% + 10px); /* Posicionando o título 10 pixels abaixo do iframe */
+    right: 13%;
+    height: 18%;
+    font-size: medium;
+    margin: 0;
+}
+h2 {
+    font-family: Arial, sans-serif; /* Altera a fonte do texto */
+    text-align: left; /* Alinha o texto à esquerda */
+    padding-left: 5px;
+     
+}
+P {
+    font-weight: bold;
+    font-size: 16px;
+     
+}
+
+.container {
+    font-size: 10px;
+    margin-right: 20px; /* Adiciona uma margem à direita para afastar o conteúdo do iframe */
+    float: left; /* Faz com que o conteúdo flutue à esquerda */
+}
+
+.left-iframe {
+   
+   left: 90px; /* posiciona a 90px para a esquerda */ 
+   top: 70px; /* posiciona a 70px para baixo */
+}
+.passo-á-passo{
+    font-size: 12.5px;
+    float: left; /* Faz com que o conteúdo flutue à esquerda */
+
+}
+
+.descrisão {
+    font-family: sans-serif ;
+    font-size: 10px;
+    float: left; /* Faz com que o conteúdo flutue à esquerda */
+
+}   
+.imagem {
+    margin-right: 20px;
+    width: 500px; /* Definindo a largura */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+}
+.configuração {
+    text-align: left
+}
+.topicos{
+    margin-right: 20px; /* Adiciona uma margem à direita para afastar o conteúdo do iframe */
+    float: left; /* Faz com que o conteúdo flutue à esquerda */
+
+}
+.campos {
+    text-align: center;
+
+}
+.procedimentos {
+    text-align: left;
+}
+.img {
+    width: 500px;
+    height: auto;
+}
+.btn-voltar {
+    background-color: #ff0505; /* Cor de fundo verde */
+    border: none;
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento de texto */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px; /* Borda arredondada */
+    position: fixed; /* Posição fixa na tela */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+    z-index: 9999; /* Certifica-se de que está acima de outros elementos */
+}
+body {
+    margin: 0;
+    overflow: hidden;
+    overflow: scroll;
+}
+#arjsDebugUIContainer {
+    visibility: hidden;
+}
+.btn-menu {
+    background-color: #ff0505; /* Cor de fundo verde */
+    border: none;
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento de texto */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px; /* Borda arredondada */
+    position: fixed; /* Posição fixa na tela */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+    z-index: 9999; /* Certifica-se de que está acima de outros elementos */
+}      
+

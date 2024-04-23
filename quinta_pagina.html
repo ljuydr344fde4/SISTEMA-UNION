@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quinta_pagina</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
+    
+<body>
+    <div class="container">
+        <h1 class="white-text">PROCEDIMENTO PARA<BR>SNMP VOLTRONIC</h1>
+        <br>
+        <h2 class="white-text">Para acessar a placa SNMP do UPS e da linha <span class="red-text">GXT-MT</span> da Vertiv, vamos configurar a placa de rede do computador com os seguintes dados: </h2>
+        <ul>
+            <li class="red-text">IP: <span class="white-text">192.168.102.220</span></li> 
+            <li class="red-text">MASCARA: <span class="white-text">255.255.255.0</span></li>
+        </ul>
+        <h2 class="white-text">Agora vamos abrir o navegador e digitar o endereço padrão que é IP <span class="red-text">192.168.102.230</span></h2>
+        <h2 class="white-text">Lembre-se de ultilizar a porta correta, indicada ao lado para conectar o cabo de rede.</h2>
+    </div>
+   
+    <iframe src='https://my.spline.design/untitled-c7baf218fcf3410ee607601cc32378ab/' frameborder='0' width='100%' height='100%'></iframe>
+    <div class="passo-á-passo">
+        <h2 class="red-text">Caso você não tenha sucesso na conexão com a placa,<br> vamos fazer reset da mesma, seguindo os passos abaixo:</h2>
+        <h2 class="white-text">1 - Remova a placa do slot;</h2>
+        <h2 class="white-text">2 - Altere o jumper jp1 para 2 e 3, conforme imagem abaixo:</h2>
+        <h2 class="white-text">3 - Inserir a placa no slot e aguardar de 3 a 5 minutos; </h2> 
+        <h2 class="white-text">4 - Remover a placa do slot:; </h2>
+        <h2 class="white-text">5 - Retorna o jumper JP1 para 1 e 2; </h2>
+        <h2 class="white-text">6 - Inserir a placa no slot e aguardar 3 minutos; </h2>
+        <h2 class="white-text">7 - Configurar a placa conforme procedimento; </h2>
+    </div>
+  
+    <div class="descrisão">
+        <h1 class="white-text">Ao acessar a placa, está será a primeira tela que veremos:</h1>
+        <br>
+        <img src="procedimento 1.jpg" alt="minha imagem" class="imagem">
+        <h1 class="red-text">Descrisão:</h1>
+        <h2 class="white-text">A - Versão do SNMP Web Server.</h2>
+        <h2 class="white-text">B - Menu de funções. Oferece um conjunto de ferramentas para navegação e configuração da placa.</h2>
+        <h2 class="white-text">C - Tela principal. Ela exibirá todas as informações e/ou alternativas de controle de acordo com o menu selecionado. </h2>
+        <h2 class="white-text">D - Seção Login mostra o tipo de usuário de login atual. O usuário paddrão é</h2>
+        <br>
+    
+        <ul>
+            <li class="white-text">Senha: <span class="red-text">12345678</span></li>
+        </ul>
+        <br><br>
+        
+        <div class="configuração">
+           <h1 class="white-text">Começando as configurações, vamos navegar até Sytem configuration -> Snmp configuration:</h1>
+           <br><br>
+           <img src="procedimento 2.jpg" alt="imagem2">
+           <h2 class="white-text">Em SNMP information, vamos preencher os campos:</h2>
+         </div>
+         <div class="tópicos">
+           <ul>
+            <li class="white-text">SNMP equipament attached -> UPS 1</li>
+            <li class="white-text">Contact -> UNION SISTEMAS E ENERGIA</li>
+            <li class="white-text">Location -> Nome da Uniorg</li>
+            <li class="white-text">System Name -> Número da Uniorg</li>
+           </ul>
+         </div>
+         
+
+        <div class="campos">
+        <h2 class="red-text">Sempre em letra maiúscula</h2>
+        <img src="procedimento 3.jpg" alt="imagem3">
+        <br>
+        <br>
+        <h2 class="white-text">Agora vamos configurar o novo IP da placa Ainda em:</h2>
+        <h2 class="white-text">System Configuration -> snmp Configuration.</h2>
+        <h2 class="white-text">Em Network settings, vamos preencher os campos:</h2>
+      <div class="procedimentos">
+        <ul>
+        <li class="white-text">IP SETTINGS - Use a static IP addres</li>
+        <li class="white-text">IP: 192.168.0.10</li>
+        <li class="white-text">Mascara: 255.255.255.0</li>
+        <li class="white-text">Gateway: 192.168.0.1</li>
+        </ul>
+     </div>
+    
+        <img src="procedimento 4.jpg" alt="imagem4">
+        <h2 class="white-text">Clicar em <span class="red-text">APPLY.</span></h2>
+        <h2 class="white-text">Caso seja solicitado senha: 12345678</h2>
+    
+        <br><br>
+        <h2 class="white-text">No campo SNMP CONFIGURATION -> TRAP IP ADDRESS</h2>
+        <h2 class="red-text">Vamos configurar:</h2>
+        <br>
+        <img src="procedimento 5.jpg" alt="imagem5" class="img">
+        <br>
+        <br>
+        <h2 class="white-text">TRAP IP Address é o responsável por enviar as informações do UPS via TRAP. Aqui, vamos configurar:</h2>
+        <h2 class="white-text">Trap IP Address 01: 192.168.0.50</h2>
+        <h2 class="white-text">Clicar em <span class="red-text">Apply</span></h2>
+        <h2 class="white-text">Ao final vamos reiniciar a placa clicando em Reboot The System.</h2>
+        <h2 class="white-text">Recomendo que acessem a placa novamente e verifiquem as configurações</h2>
+        <h2 class="red-text">*OBS - Para acessar a placa novamente, é necessário alterar o IP do seu computador dentro da nova classe de IP, por exemplo 192.168.0.29</h2>
+     
+        <button class="btn-voltar" onclick="window.history.back()">Voltar</button>
+    
+</body>
+</html>
